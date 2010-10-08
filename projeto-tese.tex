@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage[utf8,utf8x]{inputenc}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{colortbl}
+
+% usar para termos estrangeiros
+\newcommand{\eng}[1]{\textit{#1}}
+
+% usar para nomes de obras
+\newcommand{\opus}[1]{\textit{#1}}
+
+% usar para nomes de termos
+\newcommand{\termo}[1]{\textit{#1}}
+
+\newcommand{\ok}{
+  \multicolumn{1}{>{\columncolor[gray]{.6}}c}{}
+}
+
+\newcommand{\tri}[1]{
+  #1\textsuperscript{o} t
+}
+
+\newcommand{\cabecalho}[0]{
+  \textbf{\textsc{Universidade Federal da Bahia}} \\
+  \textbf{\textsc{Escola de Música}} \\
+  \textbf{\textsc{Programa de Pós-Graduação}} \\
+  \textbf{\textsc{Doutorado em Composição}} \par
+  \vspace*{1ex}
+  \textbf{Orientador:} Pedro Ribeiro Kröger Júnior\\
+  \textbf{Aluno: } Marcos da Silva Sampaio \\
+  \textbf{Data: } \today
+  \thispagestyle{empty}
+}
+
+\newcommand{\titulo}[1]{
+  \vspace{1cm}
+  \begin{center}{
+      \Huge \textbf{Projeto de Tese} \\
+    }
+    \vspace{12pt}
+    {\Large #1}
+  \end{center}
+  \vspace{1cm}
+}
+
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\cabecalho
+\titulo{Título do projeto}
+
+\section{Introdução}
+\label{sec:introducao}
+
+
+\section{Objetivos}
+\label{sec:objetivos}
+
+\section{Justificativa}
+\label{sec:justificativa}
+
+\section{Metodologia}
+\label{sec:metodologia}
+
+\section{Resultados esperados}
+\label{sec:resultados-esperados}
+
+\section{Estrutura de tópicos da tese}
+\label{sec:estrutura-de-topicos}
+
+\section{Cronograma}
+\label{sec:cronograma}
+
+\bibliography{bib}
+\bibliographystyle{plain}
+
+\end{document}
