@@ -58,32 +58,80 @@
 \section{Introdução}
 \label{sec:introducao}
 
-Algumas definições das teorias de contornos contêm erros. Por exemplo,
-a tabela de Marvin e Laprade \cite{marvin.ea87:relating}.
+As teorias de contornos musicais definidas por Friedmann
+\cite{friedmann85:methodology}, Morris
+\cite{morris87:composition,morris93:directions}, Marvin e Laprade
+\cite{marvin.ea87:relating,marvin88:generalized} contêm diversas
+declarações matemáticas, como inversão (vide equação), forma prima e
+redução de contornos.
+
+%% inserir definição de inversão de Morris
+
+Estudos preliminares mostram uma inconsistência entre o algoritmo de
+forma prima e as classes de segmentos de contornos definidas por
+Marvin e Laprade \cite{marvin.ea87:relating}.
+
+O trabalho inicial destes autores tem sido expandido desde então por
+Polansky e Bassein \cite{polansky.ea92:possible}, Clifford
+\cite{clifford95:contour}, Quinn \cite{quinn97:fuzzy}, Beard
+\cite{beard03:contour}, Bor \cite{bor09:contour} e Schultz
+\cite{schultz08:melodic,schultz09:diachronic}. Nenhum destes autores,
+entretanto, menciona esta inconsistência.
+
+O conceito de forma prima é bastante importante para estas teorias,
+pois estabelece relações entre famílias de contornos. A forma prima é,
+então, um pilar das teorias de contornos musicais. O problema de
+inconsistência relacionado com a definição de forma prima pode
+implicar em fragilidades nas ramificações destas teorias, e nas
+análises de contornos de obras musicais publicadas até então.
+
+É necessária uma revisão de todas as declarações destas teorias e suas
+ramificações para levantar possíveis inconsistências e propor soluções.
 
 \section{Objetivos}
 \label{sec:objetivos}
 
-Rastrear erros das teorias de contorno e propor soluções para
-preencher tais lacunas.
+O principal objetivo do trabalho é levantar possíveis inconsistências
+nas teorias de contornos de Friedmann, Morris e Marvin e propor
+soluções para tais problemas.
+
+Este trabalho tem como objetivos secundários:
+
+\begin{enumerate}
+\item implementar as operações das teorias de contornos no
+  \eng{Villa-Lobos Contour Module}\footnote{Disponível em
+    \url{genos.mus.br/villa-lobos/contour-module}}.
+\end{enumerate}
 
 \section{Justificativa}
 \label{sec:justificativa}
 
-Há alguns trabalhos baseados nestas teorias (pelo menos 4 teses) e não
-há menção a estes erros.
+Diversos trabalhos baseados nas teorias de contornos musicais de
+Friedmann, Morris e Marvin, podem conter fragilidades decorrentes do
+problema de inconsistência entre o algoritmo de forma prima e tabela
+de classes de segmento de contornos de Marvin e Laprade
+\cite{marvin.ea87:relating}.
 
-\section{Metodologia}
+\section{Procedimentos metodológicos}
 \label{sec:metodologia}
 
-Programação de algoritmos para todas as definições/funções presentes
-na literatura e realização de testes com os exemplos da literatura.
+O levantamento das inconsistências pode ter precisão e eficácia
+elevados com o uso de ferramentas computacionais. Por esta razão este
+trabalho demanda do desenvolvimento de um programa de computador
+desenhado para abrigar funções e testes para todas as definições das
+teorias de contorno musical de Friedmann, Morris e Marvin, e das suas
+ramificações.
+
+Tal programa deve ser desenvolvido segundo uma abordagem \eng{bottom
+  up} \cite{graham94:lisp} de forma que possa ser desenvolvido e
+expandido à medida que se avança na programação das definições das
+teorias de contornos musicais.
 
 \section{Resultados esperados}
 \label{sec:resultados-esperados}
 
-Encontrar outros erros nas definições e possíveis soluções para alguns
-desses erros.
+Espera-se com este trabalho levantar e propor soluções para as
+possíveis fragilidades nas definições teorias de contornos musicais e
 
 \section{Estrutura de tópicos da tese}
 \label{sec:estrutura-de-topicos}
@@ -114,6 +162,8 @@ desses erros.
   \caption{Cronograma das atividades (em trimestres)}
   \label{tab:cronograma}
 \end{table}
+
+\nocite{marvin.ea95:generalization}
 
 \renewcommand{\refname}{Bibliografia}
 \bibliography{bib}
