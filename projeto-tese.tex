@@ -19,6 +19,9 @@
 % usar para nomes de termos
 \newcommand{\termo}[1]{\textit{#1}}
 
+\newcommand{\goiaba}[0]{\textit{Goiaba}}
+\newcommand{\obra}[0]{\textit{Em torno da romã}}
+
 \newcommand{\ok}{
   \multicolumn{1}{>{\columncolor[gray]{.6}}c}{}
 }
@@ -187,6 +190,134 @@ de classes de segmento de contornos de Marvin e Laprade
 
 \section{Fundamentação teórica}
 \label{sec:fund-teor}
+
+%% inserir bibliografia com relação ferramentas de computação x música
+
+Contornos melódicos são abordados em diversos estudos na literatura
+sob o enfoque da Harmonia Tonal \cite{piston59:harmony}, Composição
+\cite{schoenberg67:fundamentals,toch77:shaping}, Percepção
+\cite{edworthy85:musical,dewitt.ea86:recognition}, Análise
+\cite{adams76:melodic,friedmann85:methodology,friedmann87:response,marvin.ea87:relating,marvin88:generalized,marvin91:perception,marvin.ea95:generalization,morris87:composition,morris93:directions,morris95:compositional,clifford95:contour,beard03:contour}
+e aplicação de operações de contorno na composição musical
+\cite{sampaio08:em}.
+
+%% falar algumas linhas sobre cada autor
+
+%% piston
+
+Piston abordou funções e estruturas da melodia e a sua forma (ou
+\eng{shape}) \cite{piston59:harmony}. Afirmou que a distribuição de
+notas em uma melodia é marcada por uma variedade de mudanças de
+direção, de registro, de pontos graves e agudos, e dos locais onde
+estes elementos ocorrem na melodia. Afirmou ainda que contorno é a
+reunião de todos estes elementos e que tem importância determinante do
+caráter da melodia.
+
+%% inserir schonberg, toch, edworthy e dewitt.ea
+
+%% adams
+
+Adams formalizou um conceito e tipologia de contornos melódicos para
+análise descritiva e comparativa \cite{adams76:melodic}. Foram
+definidos 15 tipos de contornos a partir de três idéias: a) redução de
+uma melodia a apenas quatro pontos---registro da nota inicial, final,
+da nota mais aguda e mais grave; b) da relação de registro entre estes
+pontos, isto é, se o ponto inicial tem mesmo registro, é mais grave ou
+agudo que o ponto final, se o ponto mais agudo ocorre antes ou depois
+do ponto final, e ainda se o ponto mais agudo e/ou mais grave
+coincidem com os pontos inicial e/ou final; e c) da possível
+recorrência entre estes pontos.
+
+%% friedmann
+
+Friedmann desenvolveu operações de contorno como ferramentas para
+análise de música do século XX e as aplicou à análise de obras de
+Schönberg \cite{friedmann85:methodology}. Ele criou operações como
+\eng{Contour Adjacency Series}, \eng{Contour Adjacency Series Vector},
+\eng{Contour Class}, \eng{Contour Interval}, \eng{Contour Interval
+  Sucession}, \eng{Contour Interval Array}, e \eng{Contour Class
+  Vector}\footnote{Estas operações estão amplamente explicadas no
+  artigo de Friedmann e nas revisões de literatura de
+  contornos.}. Friedmann ainda abordou o problema da terminologia em
+operações de contorno \cite{friedmann87:response} e serviu de ponto de
+partida para o trabalho de Marvin \cite{marvin88:generalized}.
+
+%% morris
+
+Morris publicou um manual de técnicas composicionais do século XX no
+qual discutiu espaços musicais como espaço de altura, e de contorno
+\cite{morris87:composition}. Nesta publicação ele formalizou
+representação numérica de contornos, matriz de comparação. Expandiu
+ainda seu trabalho com um algoritmo para redução de contornos
+\cite{morris93:directions}.
+
+%% marvin
+
+O trabalho de Marvin tem como ponto de partida as relações de
+semelhança de espaço de contorno, definido por Morris. Ela desenvolveu
+em co-autoria com Laprade \cite{marvin.ea87:relating} um algoritmo
+para obtenção de forma prima, uma tabela de classes de contorno
+(semelhante à tabela de Allen Forte, na teoria dos conjuntos),
+estabeleceu medidas de similaridade tanto para contornos de mesma
+cardinalidade quanto de cardinalidade diferente e testou estas
+ferramentas em análise de obras. Além disso Marvin abordou relações
+entre modelos analíticos e composicionais de estruturas musicais e a
+capacidade auditiva de ouvintes \cite{marvin88:generalized}. De acordo
+com ela teorias abstratas de estruturas de classes de alturas e
+conjuntos não refletem a percepção auditiva dos ouvintes tão bem
+quanto teorias que modelam a articulação destas estruturas de classes
+de alturas e conjuntos \cite[p. 228]{marvin88:generalized}. Ouvintes
+costumam criar representações gráficas do contexto musical, como
+mudanças de direção da melodia, padrões de duração relativa e assim
+por diante. Estas representações podem ser comparadas umas às outras a
+partir da aplicação e generalização das teorias de contornos de Morris
+\cite[p. 229]{marvin88:generalized}. Marvin propôs ainda generalização
+de contornos para outros domínios e aplicou esta idéia ao espaçamento
+de acordes na obra pianística de Luigi Dallapicola. Marvin propôs como
+trabalho futuro na área de psicologia musical experimentos que
+apliquem a sua precisa definição de equivalência de contornos. Por fim
+propôs um currículo para pedagogia de teoria para música não tonal.
+
+%% inserir polansky, quinn
+
+%% clifford
+
+Clifford investigou o uso de relações de contorno como elemento
+estrutural em obras pré-seriais de Anton Webern
+\cite{clifford95:contour}. Concluiu em seu trabalho que na ausência de
+outros elementos de organização de alturas, contorno representa um
+fator estrutural igual em significado a relações de alturas ou de
+classes de conjuntos. Verificou a existência de três níveis de
+contornos: a) contorno no nível melódico, b) contorno como delineador
+da forma, que ocorre em larga escala, e c) contorno textural, que
+envolve contornos distribuído em vozes diferentes. Além disso propôs
+trabalhos futuros como investigação de contornos em outras obras de
+Webern, exploração do contorno textural em múltiplos níveis, relações
+entre percepção auditiva e imagens dos contornos, e por fim exploração
+de contornos associados a outros parâmetros além de altura.
+
+%% beard
+
+Beard implementou a duração na análise a partir de contornos melódicos
+através do princípio estatístico de múltiplas regressões lineares
+\cite{beard03:contour}. Aplicou com êxito este princípio na análise
+dos primeiros temas de 19 sonatas de Mozart. Beard sugere como
+trabalho futuro a análise de estruturas de outras partes das obras de
+Mozart ou ainda das obras de outros compositores, experimentos com as
+técnicas de regressão e estudos de percepção auditiva para investigar
+a relação entre percepção e regressão.
+
+%% minha dissertação
+
+Em minha dissertação experimentei funcionalidades das operações de
+contorno usadas para análise na composição da obra \obra{}
+\cite{sampaio08:em}. Compus a maior parte do material da obra a partir
+de operações aplicadas a um único contorno. Embora tenha concentrado o
+estudo em contornos associados à altura, experimentei associações com
+andamento, densidade e textura. Além disso iniciei o desenvolvimento
+do software \goiaba{}, para processamento de contornos.
+
+%% inserir bohr e schultz
 
 \section{Procedimentos metodológicos}
 \label{sec:metodologia}
