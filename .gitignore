@@ -6,3 +6,4 @@
 *.log
 *.pdf
 *.ps
+data/*.eps
