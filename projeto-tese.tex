@@ -1,12 +1,14 @@
 \documentclass[12pt]{article}
 \usepackage{ifthen}
 \usepackage[utf8,utf8x]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[a4paper,margin=2cm]{geometry}
 \usepackage[brazil]{babel}
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{colortbl}
+\usepackage{subfig}
 
 % usar para termos estrangeiros
 \newcommand{\eng}[1]{\textit{#1}}
@@ -57,6 +59,73 @@
 
 \section{Introdução}
 \label{sec:introducao}
+
+Contornos podem ser definidos como os perfis, desenhos ou formatos de
+objetos. Podem ser bidimensionais e associar altura a comprimento,
+largura ou tempo. Em música contornos podem ser associados a altura,
+densidade, ritmo, homogeneidade/heterogeneidade orquestral,
+intensidade, etc. Contornos melódicos estão relacionados com movimento
+de altura de notas em função do tempo.
+
+Contornos podem ser representados com números que refletem o perfil de
+uma estrutura musical. Por exemplo, a figura \ref{fig:representacoes}
+mostra o contorno < 1 0 3 2 > associado a diferentes parâmetros
+musicais. Neste exemplo o número 0 representa o menor ponto e a
+diferença entre dois pontos é 1. Por exemplo, na figura
+\ref{fig:dynamics-in-time} o número 1 equivale à dinâmica
+\textbf{\textit{p}}, 0 à dinâmica \textbf{\textit{ppp}}, 3 à dinâmica
+\textbf{\textit{ff}}, e 2 à dinâmica \textbf{\textit{mf}}. Na figura
+\ref{fig:melodias-1032} ambas as melodias estão relacionadas ao
+contorno < 1 0 3 2 >. A figura \ref{fig:chord-densities-in-time} mostra
+acordes com densidades relacionadas ao contorno < 1 0 3 2 >. O contorno
+< 1 0 3 2 > tem seu perfil representado graficamente pela figura
+\ref{fig:representacao-1032}.
+
+\begin{figure}[h]
+  \centering
+  \subfloat[Representação gráfica]{
+    \includegraphics{c-1032}
+    \label{fig:representacao-1032}
+  }
+  \quad
+  \subfloat[Dinâmica]{
+    \includegraphics{dynamics-in-time}
+    \label{fig:dynamics-in-time}
+  }
+
+  \subfloat[Altura]{
+    \includegraphics{ly-1032}
+    \label{fig:melodias-1032}
+  }
+  \subfloat[Densidade]{
+    \includegraphics{chord-densities-in-time}
+    \label{fig:chord-densities-in-time}
+  }
+  \caption{Contorno < 1 0 3 2 > associado a diferentes parâmetros}
+  \label{fig:representacoes}
+\end{figure}
+
+O estudo de contornos é importante porque, assim como conjuntos de
+notas e motivos, contornos podem ajudar a dar coerência a uma obra
+musical \cite{clifford95:contour}. Contornos representam estruturas
+musicais manipuláveis através de várias operações como inversão e
+retrogradação, e podem ser abordados tanto do ponto de vista da
+análise quanto da composição. Contornos já foram usados
+satisfatoriamente para analisar obras de Mozart
+\cite{beard03:contour}, Schönberg \cite{friedmann85:methodology},
+Webern \cite{clifford95:contour,sampaio08:analise}, Dallapicola
+\cite{marvin88:generalized} e Reich \cite{quinn97:fuzzy}, e para a
+composição musical \cite{sampaio08:em}.
+
+O estudo de contornos tem ainda outros pontos positivos
+significativos. Contornos são estruturas de fácil representação
+gráfica comprovada por experimentos que mostram que leigos e
+músicos---estes últimos com maior acuidade---têm habilidade de usar
+desenhos gráficos como o da figura \ref{fig:representacao-1032} para
+representar contornos \cite[p. 69]{marvin88:generalized}. Além disso
+teorias de contornos fornecem conceitos e operações úteis para
+comparação de contornos. Estas operações são definidas matematicamente
+de forma semelhante às operações da teoria dos conjuntos.
 
 As teorias de contornos musicais definidas por Friedmann
 \cite{friedmann85:methodology}, Morris
