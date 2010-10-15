@@ -319,30 +319,37 @@ do software \goiaba{}, para processamento de contornos.
 
 %% inserir bohr e schultz
 
-%% introduzir a área de computação
-%% inserir: A programação como forma de entender teorias
+As descrições das teorias de contornos nem sempre são feitas pelos
+seus autores de uma forma totalmente clara. A implementação de uma
+teoria em um software de computador é um exercício poderoso no
+processo de aprendizagem, pois o programador é obrigado a expressar de
+forma precisa a compreensão que tem de uma teoria. Dessa forma a
+implementação das operações de contorno em um software de computador
+ajuda na compreensão da teoria, uma vez que é preciso entender
+totalmente como cada operação se processa e que funcionalidade tem
+para que se possa implementá-las \cite{sampaio08:em}.
 
-%% inserir: A programação de algoritmos para verificação de erros
-Softwares podem ajudar a encontrar erros difíceis de perceber em uma
-revisão manual. Um exemplo prático na área de Música é o software
-Rameau\footnote{Disponível em \url{github.com/kroger/rameau}.}
-\cite{kroger08:rameau,passos.ea09:functional}. No projeto de
-desenvolvimento deste software os 371 corais de J.S. Bach foram
-convertidos de MIDI para o formato Lilypond\footnote{Vide Lilypond em
+Softwares também podem ajudar a encontrar erros de difícil percepção
+manual. Um exemplo prático desta aplicação na área de Música é o
+desenvolvimento do software Rameau\footnote{Disponível em
+  \url{github.com/kroger/rameau}.}
+\cite{kroger08:rameau,passos.ea09:functional}. Na implementação deste
+software, os 371 corais de J.S. Bach foram convertidos do formato MIDI
+para o formato Lilypond\footnote{Vide Lilypond em
   \url{lilypond.org}}. Como o formato MIDI não guarda informações de
-enarmonia, foi necessário revisar todas as notas de todos os
-corais. Durante o desenvolvimento de aplicações em Musicologia
-Computacional para os corais de Bach \cite{kroger08:musicologia}, os
-desenvolvedores programaram ferramentas para detectar automaticamente
-estes erros de enarmonia.
+enarmonia \cite{selfridge-field97:beyond}, foi necessário revisar
+todas as notas de todos os corais. Durante o desenvolvimento de
+aplicações em Musicologia Computacional para os corais de Bach
+\cite{kroger08:musicologia}, os desenvolvedores programaram
+ferramentas para detectar automaticamente estes erros de enarmonia.
 
 %% melhorar abordagem bottom-up
-Do ponto de vista da programação do software, uma abordagem
+Do ponto de vista do desenvolvimento do software, uma abordagem
 \eng{bottom-up} implica em partir de subsistemas mais simples em
-direção ao programa como um todo. Ela é bastante adequada ao
-desenvolvimento de programas que progressivamente têm sua complexidade
-aumentada. Programas como \TeX{}\footnote{Sistema de tipografia,
-  disponível em \url{www.tug.org}.} e \eng{X Windows
+direção ao programa como um todo. Esta abordagem é bastante adequada
+ao desenvolvimento de programas que progressivamente têm sua
+complexidade aumentada. Programas como \TeX{}\footnote{Sistema de
+  tipografia, disponível em \url{www.tug.org}.} e \eng{X Windows
   System}\footnote{Sistema gráfico de janelas, disponível em
   \url{www.x.org}.} têm sido desenvolvidos dessa forma
 \cite[p. vi]{graham94:lisp}. Esta metodologia tem vantagens como a
@@ -365,7 +372,6 @@ Tal programa deve ser desenvolvido segundo uma abordagem \eng{bottom
   up} \cite{graham94:lisp} de forma que possa ser desenvolvido e
 expandido à medida que se avança na programação das definições das
 teorias de contornos musicais.
-
 
 %% inserir etapas:
 
