@@ -197,8 +197,8 @@ Contornos melódicos são abordados em diversos estudos na literatura
 sob o enfoque da Harmonia Tonal \cite{piston59:harmony}, Composição
 \cite{schoenberg67:fundamentals,toch77:shaping}, Percepção
 \cite{edworthy85:musical,dewitt.ea86:recognition}, Análise
-\cite{adams76:melodic,friedmann85:methodology,friedmann87:response,marvin.ea87:relating,marvin88:generalized,marvin91:perception,marvin.ea95:generalization,morris87:composition,morris93:directions,morris95:compositional,clifford95:contour,beard03:contour}
-e aplicação de operações de contorno na composição musical
+\cite{adams76:melodic,friedmann85:methodology,friedmann87:response,marvin.ea87:relating,marvin88:generalized,marvin91:perception,marvin.ea95:generalization,morris87:composition,morris93:directions,morris95:compositional,clifford95:contour,beard03:contour,bor09:contour,schultz08:melodic,schultz09:diachronic},
+e aplicação de operações de contorno na Composição Musical
 \cite{sampaio08:em}.
 
 %% falar algumas linhas sobre cada autor
@@ -244,10 +244,10 @@ partida para o trabalho de Marvin \cite{marvin88:generalized}.
 
 %% morris
 
-Morris publicou um manual de técnicas composicionais do século XX no
-qual discutiu espaços musicais como espaço de altura, e de contorno
-\cite{morris87:composition}. Nesta publicação ele formalizou
-representação numérica de contornos, matriz de comparação. Expandiu
+Morris abordou o \eng{design} composicional e discutiu espaços
+musicais como espaço de altura, e de contorno
+\cite{morris87:composition}. Nesta publicação ele formalizou a
+representação numérica de contornos e a matriz de comparação. Expandiu
 ainda seu trabalho com um algoritmo para redução de contornos
 \cite{morris93:directions}.
 
@@ -319,6 +319,38 @@ do software \goiaba{}, para processamento de contornos.
 
 %% inserir bohr e schultz
 
+%% introduzir a área de computação
+%% inserir: A programação como forma de entender teorias
+
+%% inserir: A programação de algoritmos para verificação de erros
+Softwares podem ajudar a encontrar erros difíceis de perceber em uma
+revisão manual. Um exemplo prático na área de Música é o software
+Rameau\footnote{Disponível em \url{github.com/kroger/rameau}.}
+\cite{kroger08:rameau,passos.ea09:functional}. No projeto de
+desenvolvimento deste software os 371 corais de J.S. Bach foram
+convertidos de MIDI para o formato Lilypond\footnote{Vide Lilypond em
+  \url{lilypond.org}}. Como o formato MIDI não guarda informações de
+enarmonia, foi necessário revisar todas as notas de todos os
+corais. Durante o desenvolvimento de aplicações em Musicologia
+Computacional para os corais de Bach \cite{kroger08:musicologia}, os
+desenvolvedores programaram ferramentas para detectar automaticamente
+estes erros de enarmonia.
+
+%% melhorar abordagem bottom-up
+Do ponto de vista da programação do software, uma abordagem
+\eng{bottom-up} implica em partir de subsistemas mais simples em
+direção ao programa como um todo. Ela é bastante adequada ao
+desenvolvimento de programas que progressivamente têm sua complexidade
+aumentada. Programas como \TeX{}\footnote{Sistema de tipografia,
+  disponível em \url{www.tug.org}.} e \eng{X Windows
+  System}\footnote{Sistema gráfico de janelas, disponível em
+  \url{www.x.org}.} têm sido desenvolvidos dessa forma
+\cite[p. vi]{graham94:lisp}. Esta metodologia tem vantagens como a
+possibilidade de deixar os programas menores e mais ágeis, de
+reutilizar funções de um subsistema em outro, de simplificar a leitura
+dos programas e de clarear as idéias do programador
+\cite[p. 4]{graham94:lisp}.
+
 \section{Procedimentos metodológicos}
 \label{sec:metodologia}
 
@@ -333,6 +365,7 @@ Tal programa deve ser desenvolvido segundo uma abordagem \eng{bottom
   up} \cite{graham94:lisp} de forma que possa ser desenvolvido e
 expandido à medida que se avança na programação das definições das
 teorias de contornos musicais.
+
 
 %% inserir etapas:
 
