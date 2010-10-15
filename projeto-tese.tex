@@ -60,6 +60,8 @@
 \cabecalho
 \titulo{Título do projeto}
 
+\hyphenation{re--a--li--za--do}
+
 \section{Introdução}
 \label{sec:introducao}
 
@@ -361,24 +363,46 @@ dos programas e de clarear as idéias do programador
 \section{Procedimentos metodológicos}
 \label{sec:metodologia}
 
-O levantamento das inconsistências pode ter precisão e eficácia
-elevados com o uso de ferramentas computacionais. Por esta razão este
-trabalho demanda do desenvolvimento de um programa de computador
-desenhado para abrigar funções e testes para todas as definições das
-teorias de contorno musical de Friedmann, Morris e Marvin, e das suas
-ramificações.
+O levantamento das inconsistências mencionadas pode ter precisão e
+eficácia elevadas por meio do uso de ferramentas computacionais. Por
+esta razão este trabalho demanda do desenvolvimento de um programa de
+computador desenhado para abrigar funções e testes para todas as
+definições das teorias de contorno musical de Friedmann, Morris e
+Marvin, e das suas ramificações.
 
-Tal programa deve ser desenvolvido segundo uma abordagem \eng{bottom
+Tal programa deve ser implementado segundo uma abordagem \eng{bottom
   up} \cite{graham94:lisp} de forma que possa ser desenvolvido e
 expandido à medida que se avança na programação das definições das
-teorias de contornos musicais.
+teorias de contornos musicais, e que se analiza os resultados.
 
-%% inserir etapas:
+Este trabalho de levantamento de inconsistências nas teorias de
+contornos musicais será realizado por meio das seguintes ações:
 
-%% levantamento das operações definidas na literatura
-%% levantamento das operações utilizadas em análises na literatura
-%% catalogação dos exemplos utilizados na literatura
-%% criação de testes funcionais com exemplos usados na literatura
+\begin{itemize}
+\item Levantamento e catalogação de todas as operações de contorno
+  presentes na literatura de contornos musicais. Esta etapa é manual e
+  será feito durante a revisão da literatura.
+\item Levantamento de todas as operações de contorno utilizadas nas
+  análises musicais baseadas nas teorias de contornos musicais. Esta
+  etapa também é manual e será feita durante a revisão de literatura.
+\item Catalogação dos exemplos ilustrativos das operações de contorno
+  presentes na literatura de contornos musicais. Esta etapa consiste
+  na digitalização dos exemplos.
+\item Implementação das operações de contornos em algoritmos.
+\item Implementação de testes funcionais com os exemplos ilustrativos
+  das teorias. Estes testes funcionais retornam erro quando alguma
+  função programada tem resultado diferente do esperado.
+\item Implementação de rotinas de verificação. Esta etapa, de
+  abordagem completamente \eng{bottom up} consiste em criar funções
+  simples que ajudam na visualização de problemas com as operações
+  programadas.
+\item Verificação e análise permanente de resultados.
+\item Avaliação de possíveis soluções para problemas.
+\end{itemize}
+
+É importante destacar que estas ações são implementadas
+simultaneamente, não havendo necessariamente uma hierarquia de
+pré-requisitos entre elas.
 
 \section{Resultados esperados}
 \label{sec:resultados-esperados}
