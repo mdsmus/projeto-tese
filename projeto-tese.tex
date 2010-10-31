@@ -67,6 +67,11 @@
 \section{Introdução}
 \label{sec:introducao}
 
+%% geral:
+%% remover sujeito oculto
+%% remover voz passiva
+%% pensar em algo sobre composição para incluir
+
 Contornos podem ser definidos como os perfis, desenhos ou formatos de
 objetos. Podem ser bidimensionais e associar altura a comprimento,
 largura ou tempo. Em música contornos podem ser abstraídos da altura,
@@ -148,13 +153,17 @@ declarações matemáticas, como inversão (vide equação
   I(P_n) = (q − 1 − P_n)
 \end{equation}
 
+%% melhorar este trecho:
+%% merge parágrafos
+
 Estudos preliminares mostram uma inconsistência entre o algoritmo de
 forma prima e as classes de segmentos de contornos definidas por
-Marvin e Laprade \cite{marvin.ea87:relating}. Contornos como < 0 2 1 3
-4 > e < 0 3 1 2 4 > não estão presentes na tabela de classes de
-segmentos de contornos mencionadas, embora, de acordo com o algoritmo
-citado, estejam em suas formas primas. Esta inconsistência não é
-mencionada por nenhum dos trabalhos de expansão da teoria de contornos
+Marvin e Laprade \cite{marvin.ea87:relating}. Por exemplo, contornos
+como < 0 2 1 3 4 > e < 0 3 1 2 4 > não estão presentes na tabela de
+classes de segmentos de contornos mencionadas, embora, de acordo com o
+algoritmo citado, estejam em suas formas primas. Esta inconsistência
+não é mencionada por nenhum dos trabalhos de expansão da teoria de
+contornos
 \cite{polansky.ea92:possible,clifford95:contour,quinn97:fuzzy,beard03:contour,bor09:contour,schultz08:melodic,schultz09:diachronic}.
 
 O conceito de forma prima é importante para estas teorias de
@@ -163,6 +172,7 @@ problema de inconsistência relacionado com a definição de forma prima
 pode implicar em fragilidades nas ramificações destas teorias, e nas
 análises de contornos de obras musicais publicadas até então.
 
+%% explicar melhor a razão desta necessidade
 É necessária uma revisão de todas as declarações destas teorias e suas
 ramificações para levantar possíveis inconsistências e propor soluções.
 
@@ -176,8 +186,9 @@ soluções para tais problemas.
 Este trabalho tem como objetivos secundários:
 
 \begin{enumerate}
-\item implementar as operações das teorias de contornos no software
-  \eng{Villa-Lobos Contour Module} \cite{sampaio.ea10:villa-lobos}.
+\item implementar as operações das teorias de contornos no programa de
+  computador \eng{Villa-Lobos Contour Module}
+  \cite{sampaio.ea10:villa-lobos}.
 \item criar uma coleção de exemplos musicais do uso de operações de
   contorno extraída da literatura de teorias de contornos.
 \item criar um tutorial online para as teorias de contornos, com
@@ -187,6 +198,7 @@ Este trabalho tem como objetivos secundários:
 \section{Justificativa}
 \label{sec:justificativa}
 
+%% reinserir a idéia da importância da resolução do problema.
 Diversos trabalhos baseados nas teorias de contornos musicais de
 Friedmann, Morris e Marvin, podem conter fragilidades decorrentes do
 problema de inconsistência entre o algoritmo de forma prima e tabela
@@ -211,10 +223,10 @@ e aplicação de operações de contorno na Composição Musical
 %% piston
 
 Piston abordou funções e estruturas da melodia e a sua forma (ou
-\eng{shape}) \cite{piston59:harmony}. Afirmou que a distribuição de
-notas em uma melodia é marcada por uma variedade de mudanças de
+\eng{shape}) \cite{piston59:harmony}. Ele afirmou que a distribuição
+de notas em uma melodia é marcada por uma variedade de mudanças de
 direção, de registro, de pontos graves e agudos, e dos locais onde
-estes elementos ocorrem na melodia. Afirmou ainda que contorno é a
+estes elementos ocorrem na melodia. Ele afirmou ainda que contorno é a
 reunião de todos estes elementos e que tem importância determinante do
 caráter da melodia.
 
@@ -223,10 +235,10 @@ caráter da melodia.
 %% adams
 
 Adams formalizou um conceito e tipologia de contornos melódicos para
-análise descritiva e comparativa \cite{adams76:melodic}. Foram
-definidos 15 tipos de contornos a partir de três idéias: a) redução de
-uma melodia a apenas quatro pontos---registro da nota inicial, final,
-da nota mais aguda e mais grave; b) da relação de registro entre estes
+análise descritiva e comparativa \cite{adams76:melodic}. Adams definiu
+15 tipos de contornos a partir de três idéias: a) redução de uma
+melodia a apenas quatro pontos---registro da nota inicial, final, da
+nota mais aguda e mais grave; b) da relação de registro entre estes
 pontos, isto é, se o ponto inicial tem mesmo registro, é mais grave ou
 agudo que o ponto final, se o ponto mais agudo ocorre antes ou depois
 do ponto final, e ainda se o ponto mais agudo e/ou mais grave
@@ -317,8 +329,8 @@ de contornos associados a outros parâmetros além de altura.
 
 Beard implementou a duração na análise a partir de contornos melódicos
 através do princípio estatístico de múltiplas regressões lineares
-\cite{beard03:contour}. Aplicou com êxito este princípio na análise
-dos primeiros temas de 19 sonatas de Mozart. Beard sugere como
+\cite{beard03:contour}. Ele aplicou com êxito este princípio na
+análise dos primeiros temas de 19 sonatas de Mozart. Beard sugere como
 trabalho futuro a análise de estruturas de outras partes das obras de
 Mozart ou ainda das obras de outros compositores, experimentos com as
 técnicas de regressão e estudos de percepção auditiva para investigar
@@ -332,7 +344,7 @@ contorno usadas para análise na composição da obra \obra{}
 de operações aplicadas a um único contorno. Embora tenha concentrado o
 estudo em contornos associados à altura, experimentei associações com
 andamento, densidade e textura. Além disso iniciei o desenvolvimento
-do software \goiaba{}, para processamento de contornos.
+do programa de computador \goiaba{}, para processamento de contornos.
 
 %% bor
 
@@ -340,13 +352,13 @@ Bor \cite{bor09:contour} desenvolveu um conjunto de algoritmos de
 redução de contornos a partir tomando como ponto de partida o
 algoritmo de redução de Morris \cite{morris93:directions}. Os
 \eng{window algorithms}, de Bor, têm como principal característica
-considerar um número específico de elementos para redução. Ele utiliza
-a analogia de uma janela de um trem em movimento, que tem uma largura
-fixa e através da qual percebe-se apenas uma porção da paisagem. A
-aplicação destes algoritmos é demonstrada em vários exemplos da
-literatura de música do século XX. Bor ainda explora implicações
-fenomenológicas e cognitivas, e introduz a extensão da teoria para o
-domínio da duração.
+considerar um número específico de elementos para redução. Ele
+utilizou a analogia de uma janela de um trem em movimento, que tem uma
+largura fixa e através da qual percebe-se apenas uma porção da
+paisagem. A aplicação destes algoritmos é demonstrada em vários
+exemplos da literatura de música do século XX. Bor ainda explorou
+implicações fenomenológicas e cognitivas, e introduz a extensão da
+teoria para o domínio da duração.
 
 %% schultz
 
@@ -360,20 +372,20 @@ de observador passivo para um participante ativo.
 
 As descrições das teorias de contornos nem sempre são feitas pelos
 seus autores de uma forma totalmente clara. A implementação de uma
-teoria em um software de computador é um exercício poderoso no
+teoria em um programa de computador é um exercício poderoso no
 processo de aprendizagem, pois o programador é obrigado a expressar de
 forma precisa a compreensão que tem de uma teoria. Dessa forma a
-implementação das operações de contorno em um software de computador
+implementação das operações de contorno em um programa de computador
 ajuda na compreensão da teoria, uma vez que é preciso entender
 totalmente como cada operação se processa e que funcionalidade tem
 para que se possa implementá-las \cite{sampaio08:em}.
 
-Softwares também podem ajudar a encontrar erros de difícil percepção
-manual. Um exemplo prático desta aplicação na área de Música é o
-desenvolvimento do software Rameau\footnote{Disponível em
-  \url{github.com/kroger/rameau}.}
+Programas de computador também podem ajudar a encontrar erros de
+difícil percepção manual. Um exemplo prático desta aplicação na área
+de Música é o desenvolvimento do programa Rameau\footnote{Disponível
+  em \url{github.com/kroger/rameau}.}
 \cite{kroger08:rameau,passos.ea09:functional}. Na implementação deste
-software, os 371 corais de J.S. Bach foram convertidos do formato MIDI
+programa, os 371 corais de J.S. Bach foram convertidos do formato MIDI
 para o formato Lilypond\footnote{Vide Lilypond em
   \url{lilypond.org}}. Como o formato MIDI não guarda informações de
 enarmonia \cite{selfridge-field97:beyond}, foi necessário revisar
@@ -381,21 +393,6 @@ todas as notas de todos os corais. Durante o desenvolvimento de
 aplicações em Musicologia Computacional para os corais de Bach
 \cite{kroger08:musicologia}, os desenvolvedores programaram
 ferramentas para detectar automaticamente estes erros de enarmonia.
-
-%% melhorar abordagem bottom-up
-Do ponto de vista do desenvolvimento do software, uma abordagem
-\eng{bottom-up} implica em partir de subsistemas mais simples em
-direção ao programa como um todo. Esta abordagem é bastante adequada
-ao desenvolvimento de programas que progressivamente têm sua
-complexidade aumentada. Programas como \TeX{}\footnote{Sistema de
-  tipografia, disponível em \url{www.tug.org}.} e \eng{X Windows
-  System}\footnote{Sistema gráfico de janelas, disponível em
-  \url{www.x.org}.} têm sido desenvolvidos dessa forma
-\cite[p. vi]{graham94:lisp}. Esta metodologia tem vantagens como a
-possibilidade de deixar os programas menores e mais ágeis, de
-reutilizar funções de um subsistema em outro, de simplificar a leitura
-dos programas e de clarear as idéias do programador
-\cite[p. 4]{graham94:lisp}.
 
 \section{Procedimentos metodológicos}
 \label{sec:metodologia}
@@ -452,7 +449,8 @@ baseado nos exemplos da literatura.
 \section{Estrutura de tópicos da tese}
 \label{sec:estrutura-de-topicos}
 
-\begin{itemize}
+%% explicar o que é cada ítem
+\begin{enumerate}
 \item Introdução
 \item Revisão de literatura (comparação de teorias e sondagem do
   estado de arte)
@@ -461,10 +459,16 @@ baseado nos exemplos da literatura.
   das teorias de contornos
 \item Propostas para solução de problemas das teorias de contornos
 \item Conclusões
-\end{itemize}
+\end{enumerate}
 
 \section{Cronograma}
 \label{sec:cronograma}
+
+%% escrever texto explicando o que já fiz
+%% inserir calendário passado
+%% falar do recital
+%% falar das peças relacionadas a contornos que já compus
+
 
 \begin{tabular}{|l||c|c|c|c||c|c|c|c||}
   \hline
