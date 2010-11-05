@@ -76,25 +76,25 @@
 %% revisão da teoria será útil para usar operações na composição
 
 Contornos podem ser definidos como os perfis, desenhos ou formatos de
-objetos. Podem ser bidimensionais e associar altura a comprimento,
-largura ou tempo. Em música contornos podem ser abstraídos da altura,
-densidade, ritmo, homogeneidade/heterogeneidade orquestral,
-intensidade, etc. Contornos melódicos estão relacionados com movimento
-de altura de notas em função do tempo.
+objetos, podem ter duas ou mais dimensões, e podem relacionar altura a
+comprimento, largura ou tempo. Em música contornos podem ser
+abstraídos da altura, densidade, ritmo, homogeneidade/heterogeneidade
+orquestral, intensidade, etc. Contornos melódicos estão relacionados
+com o movimento de altura de notas em função do tempo.
 
-Contornos podem ser representados com números que refletem o perfil de
-uma estrutura musical. Por exemplo, a figura \ref{fig:representacoes}
-mostra o contorno < 1 0 3 2 > associado a diferentes parâmetros
-musicais. Neste exemplo o número 0 representa o menor ponto e a
-diferença entre dois pontos é 1. Por exemplo, na figura
-\ref{fig:dynamics-in-time} o número 1 equivale à dinâmica
+Contornos musicais podem ser representados com números que refletem o
+perfil de uma estrutura musical. Por exemplo, a figura
+\ref{fig:representacoes} mostra o contorno < 1 0 3 2 > associado a
+diferentes parâmetros musicais. Neste exemplo o número 0 representa o
+menor ponto e a diferença entre dois pontos é 1. Por exemplo, na
+figura \ref{fig:dynamics-in-time} o número 1 equivale à dinâmica
 \textbf{\textit{p}}, 0 à dinâmica \textbf{\textit{ppp}}, 3 à dinâmica
 \textbf{\textit{ff}}, e 2 à dinâmica \textbf{\textit{mf}}. Na figura
 \ref{fig:melodias-1032} ambas as melodias estão relacionadas ao
-contorno < 1 0 3 2 >. A figura \ref{fig:chord-densities-in-time} mostra
-acordes com densidades relacionadas ao contorno < 1 0 3 2 >. O contorno
-< 1 0 3 2 > tem seu perfil representado graficamente pela figura
-\ref{fig:representacao-1032}.
+contorno < 1 0 3 2 >. A figura \ref{fig:chord-densities-in-time}
+mostra acordes com densidades relacionadas ao contorno < 1 0 3 2 >. O
+contorno < 1 0 3 2 > tem seu perfil representado graficamente pela
+figura \ref{fig:representacao-1032}.
 
 \begin{figure}[h]
   \centering
@@ -120,31 +120,33 @@ acordes com densidades relacionadas ao contorno < 1 0 3 2 >. O contorno
   \label{fig:representacoes}
 \end{figure}
 
-O estudo de contornos é importante porque, assim como conjuntos de
-notas e motivos, contornos podem ajudar a dar coerência a uma obra
-musical \cite{clifford95:contour}. Contornos representam estruturas
-musicais manipuláveis através de várias operações como inversão e
+O estudo de relações de contornos musicais é importante porque, assim
+como conjuntos de notas e motivos, contornos podem ajudar a dar
+coerência a uma obra musical \cite{clifford95:contour}. Além disso,
+contornos são manipuláveis através de várias operações como inversão e
 retrogradação, e podem ser abordados tanto do ponto de vista da
 análise quanto da composição. Contornos já foram usados
-satisfatoriamente para analisar obras de Mozart
+satisfatoriamente para análise de obras de Mozart
 \cite{beard03:contour}, Schönberg \cite{friedmann85:methodology},
 Webern \cite{clifford95:contour,sampaio08:analise}, Dallapicola
 \cite{marvin88:generalized} e Reich \cite{quinn97:fuzzy}, e para a
 composição musical \cite{sampaio08:em}.
 
-O estudo de contornos tem ainda outros pontos positivos
-significativos. Contornos são estruturas de fácil representação
-gráfica. Experimentos mostram que leigos e músicos---estes últimos com
-maior acuidade---têm habilidade de usar desenhos gráficos como o da
-figura \ref{fig:representacao-1032} para representar contornos
-\cite[p. 69]{marvin88:generalized}. Além disso teorias de contornos
-fornecem conceitos e operações úteis para comparação de
-contornos. Estas operações são definidas matematicamente de forma
-semelhante às operações da teoria dos conjuntos.
+O estudo dessas relações de contornos tem ainda outros pontos
+positivos significativos. Contornos são estruturas de fácil
+representação gráfica. Experimentos mostram que leigos e
+músicos---estes últimos com maior acuidade---têm habilidade de usar
+desenhos gráficos como o da figura \ref{fig:representacao-1032} para
+representar contornos \cite[p. 69]{marvin88:generalized}. Além disso
+teorias de relações de contornos musicais fornecem conceitos e
+operações úteis para comparação de contornos. Estas operações são
+definidas matematicamente de forma semelhante às operações da teoria
+dos conjuntos\footnote{Para maiores informações sobre teoria dos
+  conjuntos, vide \cite{straus90:introduction}.}.
 
-As teorias de contornos musicais definidas por Friedmann
-\cite{friedmann85:methodology}, Morris
-\cite{morris87:composition,morris93:directions}, Marvin e Laprade
+As teorias de relações de contornos musicais estabelecidas por
+Friedmann \cite{friedmann85:methodology}, Morris
+\cite{morris87:composition,morris93:directions}, e Marvin e Laprade
 \cite{marvin.ea87:relating,marvin88:generalized} contêm diversas
 declarações matemáticas, como inversão (vide equação
 (\ref{eq:1})\footnote{De acordo com esta equação, a inversão de um
@@ -156,28 +158,31 @@ declarações matemáticas, como inversão (vide equação
   I(P_n) = (q − 1 − P_n)
 \end{equation}
 
-%% melhorar este trecho:
-%% merge parágrafos
-
 Estudos preliminares mostram uma inconsistência entre o algoritmo de
 forma prima e as classes de segmentos de contornos definidas por
-Marvin e Laprade \cite{marvin.ea87:relating}. Por exemplo, contornos
-como < 0 2 1 3 4 > e < 0 3 1 2 4 > não estão presentes na tabela de
-classes de segmentos de contornos mencionadas, embora, de acordo com o
-algoritmo citado, estejam em suas formas primas. Esta inconsistência
-não é mencionada por nenhum dos trabalhos de expansão da teoria de
-contornos
-\cite{polansky.ea92:possible,clifford95:contour,quinn97:fuzzy,beard03:contour,bor09:contour,schultz08:melodic,schultz09:diachronic}.
+Marvin e Laprade \cite{marvin.ea87:relating}. A tabela de classes de
+segmentos de contornos deveria conter todas as formas primas possíveis
+de contornos de até seis elementos. No entanto contornos como < 0 2 1
+3 4 > e < 0 3 1 2 4 >, por exemplo, estão ausentes desta tabela,
+embora já se encontrem em suas devidas formas primas, de acordo com o
+algoritmo. A própria autora destas definições reconheceu a
+inconsistência em conversa via email (vide anexo). O conceito de forma
+prima é importante para estas teorias, pois estabelece relações de
+parentesco entre famílias de contornos. Porém não há menção desta
+inconsistência em nenhum dos trabalhos posteriores a estas definições
+\cite{polansky.ea92:possible,clifford95:contour,quinn97:fuzzy,beard03:contour,bor09:contour,schultz08:melodic,schultz09:diachronic}. Este
+problema de inconsistência pode implicar em fragilidades nas
+ramificações destas teorias, nas análises de contornos de obras
+musicais publicadas até então, e no uso futuro das operações destas
+teorias na composição musical.
 
-O conceito de forma prima é importante para estas teorias de
-contornos, pois estabelece relações entre famílias de contornos. O
-problema de inconsistência relacionado com a definição de forma prima
-pode implicar em fragilidades nas ramificações destas teorias, e nas
-análises de contornos de obras musicais publicadas até então.
-
-%% explicar melhor a razão desta necessidade
-É necessária uma revisão de todas as declarações destas teorias e suas
-ramificações para levantar possíveis inconsistências e propor soluções.
+É necessária uma revisão da totalidade de declarações destas teorias e
+de análises musicais baseadas nestas declarações para que se possa
+levantar outras inconsistências possíveis. Essa revisão poderá revelar
+problemas nas teorias de relações de contornos musicais e abrir
+caminho para propostas de soluções efetivas. Desse modo esta revisão
+poderá representar um avanço significativo no estado de arte das
+teorias de relações de contornos musicais.
 
 \section{Objetivos}
 \label{sec:objetivos}
