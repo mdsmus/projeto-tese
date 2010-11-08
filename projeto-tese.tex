@@ -78,9 +78,9 @@
 Contornos podem ser definidos como os perfis, desenhos ou formatos de
 objetos, podem ter duas ou mais dimensões, e podem relacionar altura a
 comprimento, largura ou tempo. Em música contornos podem ser
-abstraídos da altura, densidade, ritmo, homogeneidade/heterogeneidade
-orquestral, intensidade, etc. Contornos melódicos têm relação com o
-movimento de altura de notas em função do tempo.
+abstraídos da altura, densidade, ritmo, timbre, intensidade,
+etc. Contornos melódicos são abstrações do movimento de altura de
+notas em função do tempo.
 
 No estudo de contornos musicais, os valores absolutos dos elementos
 são ignorados e apenas a relação de ordem de ocorrência entre estes
@@ -138,9 +138,9 @@ Webern \cite{clifford95:contour,sampaio08:analise}, Dallapicola
 
 O estudo dessas relações tem ainda outros pontos positivos
 significativos. Contornos são estruturas de fácil representação
-gráfica. Experimentos mostram que leigos e músicos---estes últimos com
-maior acuidade---têm habilidade de usar desenhos gráficos como o da
-figura \ref{fig:representacao-1032} para representar contornos
+gráfica e experimentos mostram que leigos e músicos---estes últimos
+com maior acuidade---têm habilidade de usar desenhos gráficos como o
+da figura \ref{fig:representacao-1032} para representar contornos
 \cite[p. 69]{marvin88:generalized}. Além disso teorias de relações de
 contornos musicais fornecem conceitos e operações úteis para
 comparação de contornos. Estas operações são definidas matematicamente
@@ -180,13 +180,14 @@ ramificações destas teorias, nas análises de contornos de obras
 musicais publicadas até então, e no uso futuro das operações destas
 teorias na composição musical.
 
-É necessária uma revisão da totalidade de declarações destas teorias e
-de análises musicais baseadas nestas declarações para que se possa
-levantar outras inconsistências possíveis. Essa revisão poderá revelar
-problemas nas teorias de relações de contornos musicais e abrir
-caminho para propostas de soluções efetivas para tais problemas. Desse
-modo esta revisão poderá representar um avanço significativo no estado
-de arte das teorias de relações de contornos musicais.
+É então essencial uma revisão da totalidade de declarações destas
+teorias e de análises musicais baseadas nestas declarações para que se
+possa levantar outras inconsistências possíveis. Essa revisão poderá
+revelar problemas nas teorias de relações de contornos musicais e
+abrir caminho para propostas de soluções efetivas para tais
+problemas. Desse modo esta revisão poderá representar um avanço
+significativo no estado de arte das teorias de relações de contornos
+musicais.
 
 \section{Objetivos}
 \label{sec:objetivos}
@@ -421,8 +422,8 @@ O levantamento das inconsistências mencionadas pode ter precisão e
 eficácia elevadas por meio do uso de ferramentas computacionais. Por
 esta razão este trabalho demanda do desenvolvimento de um programa de
 computador desenhado para abrigar funções e testes para todas as
-definições das teorias de contorno musical de Friedmann, Morris e
-Marvin, e das suas ramificações.
+definições das teorias de relações de contornos musicais de Friedmann,
+Morris e Marvin, e das suas ramificações.
 
 Tal programa deve ser implementado segundo uma abordagem \eng{bottom
   up} \cite{graham94:lisp} de forma que possa ser desenvolvido e
@@ -433,6 +434,13 @@ Este trabalho de levantamento de inconsistências nas teorias de
 contornos musicais será realizado por meio das seguintes ações:
 
 \begin{itemize}
+\item Análise de relações de contornos em obras da literatura. Esta
+  etapa possibilita um maior entendimento do funcionamento das
+  operações das teorias por meio da análise de como essas relações de
+  contorno ocorrem na literatura.
+\item Composição de experimentos baseados em relações de contornos.
+  Esta etapa possibilita um maior entendimento do funcionamento das
+  operações das teorias por meio da experimentação composicional.
 \item Levantamento e catalogação de todas as operações de contorno
   presentes na literatura de contornos musicais. Esta etapa é manual e
   será feito durante a revisão da literatura.
@@ -445,7 +453,9 @@ contornos musicais será realizado por meio das seguintes ações:
 \item Implementação das operações de contornos em algoritmos.
 \item Implementação de testes funcionais com os exemplos ilustrativos
   das teorias. Estes testes funcionais retornam erro quando alguma
-  função programada tem resultado diferente do esperado.
+  função programada tem resultado diferente do esperado. A deteção
+  destes erros permite correções do programa e identificação de
+  inconsistências das teorias.
 \item Implementação de rotinas de verificação. Esta etapa, de
   abordagem completamente \eng{bottom up} consiste em criar funções
   simples que ajudam na visualização de problemas com as operações
@@ -504,9 +514,10 @@ contornos musicais, para auxiliar na análise e composição musical.
   Estudo de programação & \ok & \ok & \ok & \ok & \ok & \ok & \ok &
   \ok & \ok & \ok & \ok & \ok & \ok & & & \\
   Créditos PPGMUS & \ok & \ok & \ok & \ok & \ok & \ok & \ok & \ok & & & & & & & & \\
+  Análise de obras da literatura & & & & & & \ok & \ok & & & & & & & & & \\
   Composição de experimentos & & \ok & & \ok & & \ok & \ok & & \ok & & & & & & & \\
-  Levant. de operações & & & & & & \ok & & \ok & \ok & \ok & & & & & & \\
-  Levant. de operações análises & & & & & & & & & \ok & \ok & \ok & \ok & & & & \\
+  Levant. de operações (teoria) & & & & & & \ok & & \ok & \ok & \ok & & & & & & \\
+  Levant. de operações (análises) & & & & & & & & & \ok & \ok & \ok & \ok & & & & \\
   Catalogação de exemplos & & & & & & & & & \ok & \ok & \ok & \ok & & & & \\
   Implem. de algoritmos & & & & & & \ok & & \ok & \ok & \ok & \ok & \ok & & & & \\
   Implem. de testes funcionais & & & & & & \ok & & \ok & \ok & \ok & \ok & \ok & & & & \\
